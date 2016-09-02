@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FTPURL=$1
+S3TARGET=$2
+
+cd $TEMP_BACKUP_DIR
+lftp -e "mirror --only-missing && exit" $FTPURL
+aws s3 sync . $S3TARGET
