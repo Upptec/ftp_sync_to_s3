@@ -1,3 +1,5 @@
+[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)](https://hub.docker.com/r/upptec/ftp_sync_to_s3)
+
 # FTP download and sync to S3
 A small utility to download files from a ftp-server and sync them to a S3 target.
 Note: does not delete anything in the S3 target on sync.
