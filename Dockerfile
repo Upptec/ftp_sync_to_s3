@@ -1,7 +1,7 @@
 FROM alpine:3.3
 MAINTAINER Lars Krantz
 
-ENV TEMP_BACKUP_DIR /backuptemp
+ENV TEMP_BACKUP_DIR /tempdir
 RUN mkdir $TEMP_BACKUP_DIR
 
 RUN apk -Uv add python py-pip \

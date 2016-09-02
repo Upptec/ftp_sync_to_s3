@@ -14,7 +14,7 @@ Set these env-vars for AWS CLI (or less if using EC2-roles) (see [AWS CLI ENV-va
 
 ## Temp-volume
 
-Be sure to bind a temporary volume to `/backuptemp` (or somewhere else, but set env `TEMP_BACKUP_DIR` to that).
+Be sure to bind a temporary volume to `/tempdir` (or somewhere else, but set env `TEMP_BACKUP_DIR` to that).
 The utility downloads to this target before syncing to S3.
 
 ## Command
